@@ -26,7 +26,7 @@
 
       
 /* content */
-.se1{
+/* .se1{
     width: 100vw;
     height: 100vh;
     background-color: aqua;
@@ -42,4 +42,10 @@
     width: 100vw;
     height: 100vh;
     background-color: rgb(255, 0, 221);
+} */
+
+.row{
+    border: black;
+    border-style: solid;
+    border-radius: 17px;
 }
