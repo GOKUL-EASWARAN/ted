@@ -1,0 +1,45 @@
+/* navBar */
+.nav-shadow{
+ 
+    background: #ffffff;
+    box-shadow:  20px 20px 60px #bebebe,
+                 -20px -20px 60px #ffffff;
+    }
+    
+    .nav-underline{
+      border-bottom: 5px solid #1D3944;
+    }
+    .nav-underline-hover{
+      border-bottom: 0px solid #1D3944;
+      
+      transition: border-bottom 0.1s;
+    }
+    .nav-underline-hover:hover{
+      border-bottom: 5px solid #1D3944;
+    }
+    
+    @media only screen and (max-width: 600px) {
+      .logo{
+        width: 50%;
+      }
+      }
+
+      
+/* content */
+.se1{
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+}
+
+.se2{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 72, 0);
+}
+
+.se3{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 0, 221);
+}
