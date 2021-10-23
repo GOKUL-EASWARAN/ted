@@ -1,0 +1,333 @@
+/* navBar */
+.nav-shadow{
+ 
+background: #ffffff;
+box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+
+.nav-underline{
+  border-bottom: 5px solid #1D3944;
+}
+.nav-underline-hover{
+  border-bottom: 0px solid #1D3944;
+  
+  transition: border-bottom 0.1s;
+}
+.nav-underline-hover:hover{
+  border-bottom: 5px solid #1D3944;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo{
+    width: 50%;
+  }
+  }
+
+
+/* about page animation */
+*{
+    
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.index header{
+    margin-top: 80px;
+}
+
+.index .slider{
+    position: absolute;
+    top: 0;
+    left:0;
+    width:100%;
+    height:100vh;
+    /* background: linear-gradient(15deg, #ffb56b, #faa26e, #f29273, #e58378, #d5767d, #c26b7f, #ad6280, #965b7e, #7f547a, #674d72, #514668, #3d3e5c); */
+    background: linear-gradient(15deg, #ffca0a, #ffa559, #ff8d9e, #ff91db, #d5a4ff);
+    z-index: -1;
+}
+
+.index section{
+    display: flex;
+    height: 80vh;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.index .frontimg{
+    height: 80%;
+    width: 100%;
+}
+
+.index .frontimg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.index .headline {
+    position: absolute;
+    top: 70%;
+    left:10%;
+    font-size: 100px;
+    transform: translate(5%,-70%);
+    color: white;
+    z-index: 3;
+}
+
+@media only screen and (max-width: 600px) {
+  .index .headline {
+        max-width: 70%;
+        font-size: 40px;
+        transform: translate(-0%,-20%);
+    }
+  }
+
+  .index .frontimg::after{
+    content: "";
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.3;
+}
+
+/* ///////////team-heading-old//////////// */
+/* @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+.team-heading{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 3vw;
+    width: 100%;
+    
+}
+
+
+
+.team-heading .word {
+  position: absolute;
+ 
+  opacity: 0;
+}
+
+.team-heading .letter {
+  display: inline-block;
+  
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.team-heading .letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.team-heading .letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.team-heading .letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.team-heading .color1 {
+  
+  margin-top: 19%;
+  color: #c0392b;
+}
+.team-heading .color2 {
+  margin-top: 19%;
+  color: #2980b9;
+}
+.team-heading .color3 {
+  margin-top: 19%;
+  color: #16a085;
+}
+.team-heading .color4 {
+  margin-top: 19%;
+  color: #cfbb00;
+}
+.team-heading .color5 {
+  margin-top: 19%;
+  color: #9f00c7;
+}
+.team-heading .thisIs {
+  float: right;
+  margin-top: 20%;
+} */
+/* ///////////team-heading//////////// */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+.team-heading{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 4vw;
+    width: 100%;
+    
+}
+
+
+
+.team-heading .word {
+  position: absolute;
+ 
+  opacity: 0;
+}
+
+.team-heading .letter {
+  display: inline-block;
+  
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.team-heading .letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.team-heading .letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.team-heading .letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.team-heading .color1 {
+  width: 145%;
+  color: #c0392b;
+}
+.team-heading .color2 {
+  width: 194%;
+  color: #2980b9;
+}
+.team-heading .color3 {
+  width: 100%;
+  color: #16a085;
+}
+.team-heading .color4 {
+  width: 179%;
+  color: #cfbb00;
+}
+.team-heading .color5 {
+  width: 187%;
+  color: #9f00c7;
+}
+.team-heading .thisIs {
+  float: right;
+  
+}
+
+/*  team comtent 1*/
+
+.img-container {
+  
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.bottom-left {
+  position: absolute;
+  
+  bottom: 31%;
+  right: 40%;
+  color: #363636;
+  font-weight: 800;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+:root {
+    --font3: 'Roboto', sans-serif;
+}
+
+.h1,
+h1 {
+    font-size: 1.5rem;
+}
+
+.container-fluid {
+    max-width: 1400px;
+}
+
+.card {
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+    border: 1;
+    border-radius: 1rem;
+}
+
+.img-hover-zoom--colorize img {
+    border-radius: 50%;
+    width: 120px;
+    height: auto;
+    margin-top: 20px;
+    padding: 1px;
+    transition: transform .5s;
+    filter: grayscale(100%);
+}
+
+.img-hover-zoom--colorize:hover img {
+    filter: grayscale(0);
+    transform: scale(1.05);
+}
+
+.card h5 {
+    overflow: hidden;
+    height: 80px;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.card h5 a {
+    color: black;
+    text-decoration: none;
+}
+
+.role {
+    color: #7a7a7a;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fab {
+    font-size: 1.5rem;
+    color: darkgray;
+    transition: transform .5s;
+}
+
+.fab:hover {
+    color: black;
+    transform: scale(1.1);
+}
+
+.card h2 {
+    font-size: 1rem;
+}
+
+
+/* MEDIA */
+
+@media only screen and (min-width: 1200px) {
+    .img-hover-zoom--colorize img {
+        width: 200px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .h1,
+    h1 {
+        font-size: 2rem;
+    }
+}
