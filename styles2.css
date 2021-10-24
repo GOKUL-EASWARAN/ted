@@ -33,11 +33,11 @@
     margin-bottom: 50px;
     
 } */
-.panel-margin{
+/* .panel-margin{
     height: 165px;
     z-index: 4;
     background-color: rgb(255, 255, 255);
-}
+} */
 
 /* .row{
     
@@ -58,27 +58,92 @@ body {
 canvas {
   position: fixed;
   left: 50%;
-  top: 60%;
-  height: 80vh;
+  top: 57%;
+  height: 60vh;
   width: 80%; 
   transform: translate(-50%, -50%);
-  /* max-width: 70vw;
-  max-height: 60vh; */
+  
   object-fit: cover;
-  border-radius: 17px;
+  border-radius: 14px;
 }
 
-@media only screen and (min-width: 600px) {
+/* @media only screen and (max-width: 500px) {
   canvas {
-    position: fixed;
     left: 50%;
     top: 60%;
     height: 65vh;
     width: 80%; 
     transform: translate(-50%, -50%);
-    /* max-width: 70vw;
-    max-height: 60vh; */
-    object-fit: cover;
-    border-radius: 17px;
+
+    
   }
+} */
+
+@media only screen and (max-width: 760px) {
+  canvas {
+    left: 50%;
+    top: 53%;
+    height: 70vh;
+    width: 80%; 
+    transform: translate(-50%, -50%);
+
+    
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  canvas {
+    left: 50%;
+    top: 50%;
+    height: 75vh;
+    width: 80%; 
+    transform: translate(-50%, -50%);
+
+    
+  }
+}
+
+/* ///////// */
+
+/* .scroll-p{
+  font-size: 12px;
+} */
+.scroll-downs {
+  position: fixed;
+  top: 0;
+  right: 0;
+  /* bottom:0 ; */
+  left: 0;
+  
+  margin: auto;
+  margin-top: 90vh;
+  z-index: 5;
+  width :118px;
+  height: 55px;
+}
+.mousey {
+  background-color:black;
+  width: 2px;
+  padding: 4px 11px;
+  height: 27px;
+  margin: auto;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 7px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
 }
