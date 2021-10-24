@@ -58,8 +58,8 @@ body {
 canvas {
   position: fixed;
   left: 50%;
-  top: 57%;
-  height: 60vh;
+  top: 62%;
+  height: 70vh;
   width: 80%; 
   transform: translate(-50%, -50%);
   
@@ -82,7 +82,7 @@ canvas {
 @media only screen and (max-width: 760px) {
   canvas {
     left: 50%;
-    top: 53%;
+    top: 55%;
     height: 70vh;
     width: 80%; 
     transform: translate(-50%, -50%);
@@ -94,8 +94,8 @@ canvas {
 @media only screen and (max-width: 500px) {
   canvas {
     left: 50%;
-    top: 50%;
-    height: 75vh;
+    top: 55%;
+    height: 70vh;
     width: 80%; 
     transform: translate(-50%, -50%);
 
@@ -116,7 +116,7 @@ canvas {
   left: 0;
   
   margin: auto;
-  margin-top: 90vh;
+  margin-top: 50vh;
   z-index: 5;
   width :118px;
   height: 55px;
@@ -124,7 +124,7 @@ canvas {
 .mousey {
   background-color:black;
   width: 2px;
-  padding: 4px 11px;
+  padding: 9px 15px;
   height: 27px;
   margin: auto;
   border: 2px solid #fff;
@@ -146,4 +146,13 @@ canvas {
   0% { opacity: 0; }
   10% { transform: translateY(0); opacity: 1; }
   100% { transform: translateY(15px); opacity: 0;}
+}
+
+.scroll-downs {
+  animation: cssAnimation 0s 3s forwards;
+  visibility: visible;
+}
+
+@keyframes cssAnimation {
+  to   { visibility: hidden; }
 }
