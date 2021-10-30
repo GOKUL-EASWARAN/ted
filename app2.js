@@ -16,28 +16,46 @@ const html = document.documentElement;
 const canvas = document.getElementById("hero-lightpass");
 const context = canvas.getContext("2d");
 
-const frameCount = 6;
-const currentFrame = index => (
-  `./img/speaker${index}.jpg`
-)
+
+
+const frameCount = 7;
+const currentFrame = index => {
+  if(screen.width>480){
+   return `./img/speaker${index}.jpg`
+  }
+  else if(index>=7){
+   return `./img/speakera${index}.jpg`
+  }
+  else{
+    return `./img/speaker${index}.jpg`
+  }
+}
+  
+  
+
 
 const preloadImages = () => {
-  for (let i = 1; i < frameCount;i++) {
-    const img = new Image();
-    img.src = currentFrame(i);
-  }
+  // for (let i = 1; i < frameCount;i++) {
+    const img = new Image()
+    img.src = currentFrame(1);
+    canvas.width=1158;
+    canvas.height=670;
+  context.drawImage(img, 0, 0);
+  // }
 };
 
-const img = new Image()
-img.src = currentFrame(1);
-canvas.width=1158;
-canvas.height=670;
-img.onload=function(){
-  context.drawImage(img, 0, 0);
-}
+// const img = new Image()
+// // img.src = currentFrame(1);
+// canvas.width=1158;
+// canvas.height=670;
+// img.onload=function(){
+//   // context.drawImage(img, 0, 0);
+// }
 
 const updateImage = index => {
-  img.src = currentFrame(index);
+  
+  const img = new Image()
+  img.src = currentFrame(index);  
   context.drawImage(img, 0, 0);
 }
 
